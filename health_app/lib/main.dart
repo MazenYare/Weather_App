@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:health_app/featuers/Contreller/HomeScreen_main.dart';
+import 'package:health_app/src/Contreller/HomeScreen_main.dart';
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
 

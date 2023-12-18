@@ -12,11 +12,22 @@ class User extends Equatable {
     required this.hight,
   });
 
+  const User.empty()
+      : this(
+            id: 1,
+            bloodType: '_empty.bloodType',
+            wegiht: 1,
+            hight: 1,
+            dateOfBirth: '_.empty.dateofBirth',
+            firstname: '_empty.firstname',
+            gender: '_empty.gender',
+            lastname: '_empty.lastname');
+
   final String firstname;
   final int id;
   final String lastname;
   final int wegiht;
-  final DateTime dateOfBirth;
+  final String dateOfBirth;
   final String gender;
   final String bloodType;
   final int hight;
@@ -32,7 +43,7 @@ void main() {
       firstname: 'firstname',
       lastname: 'lastname',
       wegiht: 1,
-      dateOfBirth: DateTime.utc(1, 1, 1),
+      dateOfBirth: 'dateOfBirth',
       gender: 'gender',
       bloodType: 'bloodType',
       hight: 1);
